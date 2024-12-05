@@ -11,7 +11,7 @@ const App = () => {
   const handleSearch = (query) => {
     setSearchQuery(query);
 
-    // Filter reviews by topic
+    // Filter reviews by topic from json data
     const filtered = reviewsData.filter((reviewArray) =>
       reviewArray[0]?.topic?.toLowerCase().includes(query.toLowerCase())
     );
