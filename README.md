@@ -1,70 +1,97 @@
-# Getting Started with Create React App
+# Cochrane Reviews Visualization App By Jayanth Somuri
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Overview
+This is a Single Page Application (SPA) built with React 18 to visualize Cochrane Reviews. The application features a responsive design with infinite scrolling and an advanced search functionality with auto-suggestions.
 
-## Available Scripts
+## Key Features
+- Responsive layout compatible with different screen sizes
+- Infinite scrolling (initially displays 10 reviews, loads more on scroll)
+- Advanced search with auto-suggestions
+- Hyperlinked review titles
+- Color-coded UI elements
 
-In the project directory, you can run:
+## Prerequisites
+- Node.js (v16 or later)
+- npm (v8 or later)
 
-### `npm start`
+## Installation Steps
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Clone the Repository
+```bash
+git clone <your-repository-url>
+cd cochrane-reviews-app
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. Install Dependencies
+```bash
+npm install
+```
 
-### `npm test`
+3. Install Additional Dependencies
+```bash
+npm install react-virtualized-auto-sizer react-window
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. Start the Development Server
+```bash
+npm start
+```
 
-### `npm run build`
+5. Open in Browser
+Open [http://localhost:3000](http://localhost:3000) to view the app
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Project Structure
+```
+cochrane-reviews-app/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── ReviewList.js
+│   │   ├── SearchBar.js
+│   ├── data/
+│   │   └── cochrane_reviews.json
+│   ├── App.js
+│   └── index.js
+├── package.json
+└── README.md
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Key Dependencies
+- React 18
+- react-window
+- react-virtualized-auto-sizer
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Customization
+- Modify `src/data/cochrane_reviews.json` to update review data
+- Adjust styling in component files as needed
 
-### `npm run eject`
+## Troubleshooting
+- Ensure all dependencies are correctly installed
+- Check console for any error messages
+- Verify the data file is correctly formatted
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Browser Compatibility
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Performance Tips
+- The app uses virtualization for efficient rendering of large lists
+- Infinite scrolling reduces initial load time
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Contributing
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Contact
+mail:- jayanthsomuri9@gmail.com
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Support
+For any issues or questions, please open an issue in the GitHub repository.

@@ -1,17 +1,36 @@
-/* Review card */
+/* Review card without left border */
 .review-card {
-  margin-left: 100px;
+  margin-left: 100px; /* Reset any extra margin */
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 20px; /* Adjusted for space between reviews */
   padding: 20px;
-  border-left: 5px solid #040781;
-  border-radius: 4px;
+  border-radius: 1px;
   background-color: #f9f9f9;
+  box-sizing: border-box;
+  overflow-x: hidden; /* Ensure no extra content overflows */
 }
 
+/* Container for adding left border */
+.review-card-content {
+  border-left: 3px solid #040781; /* Left border line */
+  padding-left: 20px; /* Add padding to separate content from the border */
+}
+
+/* Add space between individual reviews */
+.review-list-container > div {
+  margin-bottom: 16px; /* Adjusted space between reviews */
+}
+
+/* Adjust padding to keep the layout visually balanced */
+.review-card {
+  padding: 20px;
+}
+
+
+
 .review-title {
-  font-size: 18px;
-  color: #0056b3;
+  font-size: 16px;
+  color: #040781;
   margin-bottom: 5px;
 }
 .search-bar-container{
@@ -33,12 +52,7 @@
   margin-bottom: 5px;
 }
 
-.review-topic {
-  font-size: 14px;
-  color: #555;
-  font-style: italic;
-  margin-bottom: 5px;
-}
+
 
 .review-date {
   font-size: 14px;
@@ -46,12 +60,24 @@
 }
 
 /* Styles for the SearchBar */
-.search-bar-container {
-  position: absolute;
-  top: 20px; /* Distance from the top */
-  right: 20px;
-  bottom:20px; /* Distance from the right */
-  z-index: 1000; /* Ensure it's above other elements */
+/* Hide scrollbar for Webkit browsers (Chrome, Edge, Safari) */
+.review-list-container > div {
+  overflow-y: auto; /* Enable vertical scrolling */
+  overflow-x: hidden; /* Disable horizontal scrolling */
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+
+/* Hide scrollbar for Webkit browsers (Chrome, Safari, Edge) */
+.review-list-container > div::-webkit-scrollbar {
+  display: none;
+}
+
+
+.review-card {
+  box-sizing: border-box;
+  overflow-x: hidden; /* Ensure no extra content overflows */
+  padding: 8px; /* Optional for visual balance */
 }
 
 .search-bar {
@@ -61,4 +87,49 @@
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.review-summary{
+  margin-left: 100px;
+}
+.header-container {
+  margin-left: 100px;
+  display: flex;
+  align-items: center; /* Align text vertically in the center */
+  gap: 8px; /* Add spacing between the two items */
+}
+.header{
+  
+  font-weight: bold;
+}
+.tag{
+
+
+  background-color: #962d91;
+  color:white;
+  display:inline-block;
+  padding: 4px 12px;
+  border-radius: 16px;
+  margin-right: 20px;
+}
+
+.close-icon {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .review-card {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .header-container,
+  .review-summary {
+    margin-left: 16px;
+  }
+
+  .search-bar {
+    width: 100%;
+    max-width: 300px;
+  }
 }
