@@ -19,7 +19,6 @@ This is a Single Page Application (SPA) built with React 18 to visualize Cochran
 
 1. Clone the Repository
 ```bash
-git clone <your-repository-url>
 cd cochrane-reviews-app
 ```
 
