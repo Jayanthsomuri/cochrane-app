@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Cochrane Reviews Visualization App By Jayanth Somuri
 
 ## Project Overview
