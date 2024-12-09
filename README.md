@@ -96,5 +96,4 @@ mail:- jayanthsomuri9@gmail.com
 ## Support
 For any issues or questions, please open an issue in the GitHub repository.
 =======
-# cochrane-app
->>>>>>> 48e12baff2097fda2e8e2554e896d110c3a07d9c
+
